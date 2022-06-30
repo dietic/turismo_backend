@@ -13,3 +13,7 @@ POSTGRES_USER=turismo_admin
 POSTGRES_PASSWORD=
 POSTGRES_DATABASE=turismo
 ```
+5. Instalar postgres en la máquina
+6. Instalar PGAdmin 4 e ingresar
+7. Correr los scripts en la carpeta `sql`
+8. Levantar la aplicación con `npm run dev`
