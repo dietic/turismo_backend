@@ -5,7 +5,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 
-import api from './api';
+import api from './api/routes';
 
 const app = express();
 
