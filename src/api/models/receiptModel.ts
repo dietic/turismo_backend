@@ -5,8 +5,7 @@ const { DataTypes } = require('sequelize');
 
 export const ReceiptModel = sequelize.define('tblPaymentMethod', {
   totalPrice: {
-    type: DataTypes.DOUBLE,
-    allowNull: false
+    type: DataTypes.DOUBLE
   },
   state: {
     type: DataTypes.BOOLEAN,

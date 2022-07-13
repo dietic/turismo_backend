@@ -3,9 +3,13 @@ import { sequelize } from '../../db';
 const { DataTypes } = require('sequelize');
 
 export const CustomerModel = sequelize.define('tblCustomer', {
+  id: {
+    type: DataTypes.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
   documentNumber: {
-    type: DataTypes.TEXT,
-    allowNull: false
+    type: DataTypes.TEXT
   },
   firstName: {
     type: DataTypes.TEXT,

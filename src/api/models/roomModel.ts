@@ -5,8 +5,8 @@ const { DataTypes } = require('sequelize');
 export const RoomModel = sequelize.define('tblRoom', {
   id: {
     type: DataTypes.INTEGER,
-    allowNull: false,
-    primaryKey: true
+    primaryKey: true,
+    autoIncrement: true
   },
   beds: {
     type: DataTypes.INTEGER,

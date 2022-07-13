@@ -4,7 +4,6 @@ const { DataTypes } = require('sequelize');
 
 export const PaymentMethodModel = sequelize.define('tblPaymentMethod', {
   name: {
-    type: DataTypes.TEXT,
-    allowNull: false
+    type: DataTypes.TEXT
   }
 }, { underscored: true, timestamps: false });

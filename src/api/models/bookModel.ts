@@ -7,8 +7,7 @@ const { DataTypes } = require('sequelize');
 
 export const BookModel = sequelize.define('tblBook', {
   startDate: {
-    type: DataTypes.DATE,
-    allowNull: false
+    type: DataTypes.DATE
   },
   endDate: {
     type: DataTypes.DATE,
@@ -36,6 +35,6 @@ export const BookModel = sequelize.define('tblBook', {
   }
 }, { underscored: true, timestamps: false });
 
-// BookModel.hasOne(RoomModel, { foreignKey: 'roomId' });
-BookModel.hasOne(PaymentMethodModel, { foreignKey: 'paymentMethodId' });
-BookModel.hasOne(CustomerModel, { foreignKey: 'customerId' });
+BookModel.hasOne(RoomModel, { foreignKey: 'id' });
+BookModel.hasOne(PaymentMethodModel, { foreignKey: 'id' });
+BookModel.hasOne(CustomerModel, { foreignKey: 'id' });
